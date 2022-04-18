@@ -49,7 +49,6 @@ func Encrypt(cleartext string, keyword string) string {
 	b := []byte(text)
 	k := []byte(allCaps(keyword))
 	for i, x := range b {
-
 		b[i] = ((x-65)-(k[i%len(k)]-65)+26)%26 + 65
 	}
 	return string(b)
