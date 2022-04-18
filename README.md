@@ -13,5 +13,5 @@ Encoding is the default, with a default keyword "a", which keeps all letters the
 ## Example
 ```
 vigenere -i cleartext.txt -k forget -e -o ciphertext.txt
-caesar -i ciphertext.txt -k forget -d -o message.txt
+vigenere -i ciphertext.txt -k forget -d -o message.txt
 ```
